@@ -1,0 +1,32 @@
+{
+  "name": "purescript-geohash",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "bn.js": "^4.11.8",
+    "latlon-geohash": "^1.1.0"
+  },
+  "devDependencies": {
+    "bower": "^1.8.4",
+    "pulp": "^12.0.1",
+    "purescript": "^0.11.7"
+  },
+  "scripts": {
+    "postinstall": "bower i",
+    "test": "pulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f-o-a-m/purescript-geohash.git"
+  },
+  "author": "Kristoffer Josefsson",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/f-o-a-m/purescript-geohash/issues"
+  },
+  "homepage": "https://github.com/f-o-a-m/purescript-geohash#readme"
+}
