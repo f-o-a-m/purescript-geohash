@@ -12,7 +12,7 @@
     "purescript-strings": "^3.5.0",
     "purescript-maybe": "^3.1.0",
     "purescript-bytestrings": "^6.0.0",
-    "purescript-eth-core": "^0.0.1"
+    "purescript-eth-core": "^0.1.0"
   },
   "devDependencies": {
     "purescript-psci-support": "^3.0.0"
