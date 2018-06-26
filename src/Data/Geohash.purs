@@ -13,6 +13,7 @@ import Prelude
 import Data.ByteString as BS
 import Data.Int (hexadecimal, radix)
 import Data.Maybe (fromJust)
+import Data.Newtype (class Newtype)
 import Data.String (fromCharArray, toCharArray)
 import Network.Ethereum.Core.BigNumber (parseBigNumber, toString)
 import Network.Ethereum.Core.HexString (HexString, mkHexString, toHexString, unHex)
@@ -22,12 +23,12 @@ import Partial.Unsafe (unsafePartial)
 newtype Geohash = Geohash String
 
 derive newtype instance geohashEq :: Eq Geohash
+derive instance geohashNewtype :: Newtype Geohash _
 
 instance geohashShow :: Show Geohash where
   show (Geohash gh) = gh
 
 foreign import toGeohash :: {lat :: Number, lon :: Number} -> Geohash
-
 foreign import fromGeohash :: Geohash -> {lat :: Number, lon :: Number}
 
 geohashToHex :: Geohash -> HexString
