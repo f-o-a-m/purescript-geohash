@@ -14,7 +14,7 @@ import Data.ByteString as BS
 import Data.Int (hexadecimal, radix)
 import Data.Maybe (fromJust)
 import Data.Newtype (class Newtype)
-import Data.String (fromCharArray, toCharArray)
+import Data.String.CodeUnits (fromCharArray, toCharArray)
 import Network.Ethereum.Core.BigNumber (parseBigNumber, toString)
 import Network.Ethereum.Core.HexString (HexString, mkHexString, toHexString, unHex)
 import Node.Encoding (Encoding(Hex))
